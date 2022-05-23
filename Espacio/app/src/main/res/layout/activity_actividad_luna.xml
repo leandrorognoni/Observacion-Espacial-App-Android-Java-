@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ActividadLuna">
+
+
+    <ImageView
+        android:id="@+id/fondoLuna"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/t1luna"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:elegantTextHeight="false"
+                android:text="Cargando..."
+                android:textColor="#9DACD1"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t1luna2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:textColor="#9DACD1"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/t1luna3"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginLeft="10sp"
+                android:textColor="#9DACD1"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/iwluna"
+                android:layout_width="match_parent"
+                android:layout_height="263dp" />
+
+            <TextView
+                android:id="@+id/t2luna"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10sp"
+                android:textColor="#9DACD1"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/descTitu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10sp"
+                android:textColor="#9DACD1"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:textColor="#9DACD1"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/ivlunas"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="5sp"
+                app:srcCompat="@drawable/fase_lunar" />
+
+            <TextView
+                android:id="@+id/adi"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:textColor="#9DACD1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/masInfo"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#80000000"
+                android:onClick="info"
+                android:text="Mas Info"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.297" />
+
+            <Button
+                android:id="@+id/volver"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#80000000"
+                android:onClick="volver"
+                android:text="Volver al Menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.297" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

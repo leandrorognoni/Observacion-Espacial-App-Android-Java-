@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Espacio">
         <activity
+            android:name=".ActividadImagDia"
+            android:exported="true" />
+        <activity
             android:name=".ActividadLuna2"
             android:exported="true" />
         <activity
@@ -21,8 +24,12 @@
             android:name=".ActividadLuna"
             android:exported="true" />
         <activity
+            android:name=".ActividadConstelacion"
+            android:exported="true"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

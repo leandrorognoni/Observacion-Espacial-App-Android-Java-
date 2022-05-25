@@ -11,6 +11,7 @@
         android:id="@+id/f1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,6 +32,7 @@
                 android:layout_width="397dp"
                 android:layout_height="57dp"
                 android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
                 android:text="Cargando"
                 android:textColor="#8B8DB5"
                 android:textSize="30sp"
@@ -47,8 +49,8 @@
 
             <TextView
                 android:id="@+id/hora"
-                android:layout_width="match_parent"
-                android:layout_height="85dp"
+                android:layout_width="399dp"
+                android:layout_height="59dp"
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="10sp"
                 android:textColor="#8B8DB5"
@@ -57,17 +59,16 @@
             <TextView
                 android:id="@+id/inf"
                 android:layout_width="match_parent"
-                android:layout_height="53dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="10sp"
-                android:layout_marginRight="10sp"
+                android:layout_marginRight="20sp"
                 android:textColor="#8B8DB5"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/iwSol1"
                 android:layout_width="match_parent"
-                android:layout_height="421dp"
-                android:layout_marginTop="20dp" />
+                android:layout_height="421dp" />
 
             <ImageView
                 android:id="@+id/iwSol2"

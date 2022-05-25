@@ -4,7 +4,7 @@ import com.example.espacio.controller.LunaController;
 
 public class LunaModel {
 
-    // gif piola q glide reconoce String gif  = "https://scitechdaily.com/images/DSCOVR-Far-Side-Moon.gif";
+
 
     private String tituloDescrip;
     private String descripcion;

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ActividadImagDia">
+
+  <TextView
+      android:id="@+id/titulo"
+      android:layout_width="match_parent"
+      android:layout_height="31dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginRight="5dp"
+      android:textAlignment="center"
+      android:textColor="#999CDF"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.022" />
+
+  <TextView
+      android:id="@+id/subti1"
+      android:layout_width="match_parent"
+      android:layout_height="39dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="5dp"
+      android:textAlignment="center"
+      android:textColor="#999CDF"
+      android:textSize="15sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.073" />
+
+  <TextView
+      android:id="@+id/fecha"
+      android:layout_width="407dp"
+      android:layout_height="24dp"
+      android:layout_marginTop="4dp"
+      android:textAlignment="center"
+      android:textColor="#999CDF"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/subti1" />
+
+  <ImageView
+      android:id="@+id/iw1"
+      android:layout_width="511dp"
+      android:layout_height="344dp"
+      android:layout_marginTop="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.517"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/fecha"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/descopy"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_marginTop="10dp"
+      android:textAlignment="center"
+      android:textColor="#999CDF"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/iw1" />
+
+  <Button
+      android:id="@+id/volverAtras2"
+      android:layout_width="159dp"
+      android:layout_height="58dp"
+      android:backgroundTint="#80000000"
+      android:onClick="volver"
+      android:text="Volver Atras"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/descopy"
+      app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

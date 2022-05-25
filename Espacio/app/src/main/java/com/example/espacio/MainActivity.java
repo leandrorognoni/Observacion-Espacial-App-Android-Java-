@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     ImageView fondo;
-
     String urlFondo = "https://media4.giphy.com/media/MXQnyEQwBJ6eTj90L5/giphy.gif?cid=790b761195" +
             "6338994ebc319e038ecbdfefa580a2c753ec5d&rid=giphy.gif&ct=g";
 
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(getApplicationContext())
                 .load( urlFondo)
                 .into(fondo);
-
 
     }
 
@@ -46,7 +44,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intento = new Intent(this, ActividadSol.class);
         startActivity(intento);
 
-    }
+         }
+
+         public void imagDia (View v){
+
+        Intent intento = new Intent(this, ActividadImagDia.class);
+        startActivity(intento);
+
+         }
+
+
+        public void buscarConstelacion (View v){
+
+        Intent intento = new Intent(this, ActividadConstelacion.class);
+        startActivity(intento);
+
+      }
 
 
 }

@@ -1,28 +1,14 @@
 package com.example.espacio.models;
 
-import android.text.format.Time;
-
-import com.bumptech.glide.Glide;
-import com.example.espacio.ActividadSol;
 import com.example.espacio.controller.SolController;
-import com.example.espacio.utilidades.Horario;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
-
-import java.io.IOException;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import com.example.espacio.utilidades.HorarioFecha;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class SolModel {
 
     private ArrayList<String> urlImagenes;
-    Horario hora;
+    private HorarioFecha hora;
 
 
     private SolController solController;
@@ -34,12 +20,12 @@ public class SolModel {
 
     private final String URL_PRINCIPAL = "https://sdo.gsfc.nasa.gov";
     private final String URL_DATA = "https://sdo.gsfc.nasa.gov/data";
-    private final String URL_FONDO_TITULO = "https://c.tenor.com/lEuZK57PtxIAAAAC/space-stars.gif";
+    private final String URL_FONDO_TITULO = "https://thumbs.gfycat.com/AdeptFalseJunco-size_restricted.gif";
 
     public SolModel (SolController solController){
         this.solController = solController;
         this.urlImagenes = new ArrayList<>();
-        this.hora = new Horario();
+        this.hora = new HorarioFecha();
         setHora();
     }
 

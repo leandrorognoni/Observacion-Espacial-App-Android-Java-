@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_constelacion.xml" value="0.25" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_luna.xml" value="0.2" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_luna2.xml" value="0.2158154859967051" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_sol.xml" value="0.22" />
+        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_imagen_dia.xml" value="0.25" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_main.xml" value="0.5" />
       </map>
     </option>

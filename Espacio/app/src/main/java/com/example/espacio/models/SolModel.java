@@ -69,5 +69,8 @@ public class SolModel {
     public String getURL_FONDO_TITULO(){
         return URL_FONDO_TITULO;
     }
+
+
+
 }
 

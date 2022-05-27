@@ -67,12 +67,13 @@
         app:layout_constraintVertical_bias="0.618" />
 
     <Button
-        android:id="@+id/planetas"
+        android:id="@+id/calcuGalaxia"
         android:layout_width="174dp"
         android:layout_height="63dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="#80000000"
-        android:text="xx"
+        android:onClick="calcuGalaxia"
+        android:text="Calculadora Galactiva"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

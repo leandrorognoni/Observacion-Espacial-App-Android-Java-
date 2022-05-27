@@ -62,4 +62,12 @@ public class MainActivity extends AppCompatActivity {
       }
 
 
+
+    public void calcuGalaxia (View v){
+
+        Intent intento = new Intent(this, ActividadCalcu.class);
+        startActivity(intento);
+
+    }
+
 }

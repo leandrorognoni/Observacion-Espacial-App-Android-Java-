@@ -15,6 +15,7 @@ public class SolController {
     private SolModel solModel;
     private ActividadSol actividadSol;
 
+
     public SolController(ActividadSol actividadSol) {
         this.actividadSol = actividadSol;
         this.solModel = new SolModel(this);
@@ -25,6 +26,7 @@ public class SolController {
 
         this.actividadSol.titu1.setText(solModel.getTITULO());
         this.actividadSol.subti.setText(solModel.getSUB_TIT());
+
         this.actividadSol.hora.setText(solModel.gethorario());
         this.actividadSol.inf.setText(solModel.getINFO());
 
@@ -101,7 +103,6 @@ public class SolController {
             String urlImgSol7 =    contenido7.select("#aia_0094").select("div.imagedata").select("a").attr("href");
             String urlImgSol8 =    contenido8.select("#aia_1600").select("div.imagedata").select("a").attr("href");
 
-
             //Se agregar al ArrayList de SolModel cada Url de cada imagen
             solModel.agregarImagen(urlImgSol);
             solModel.agregarImagen(urlImgSol2);
@@ -117,6 +118,8 @@ public class SolController {
             e.printStackTrace();
         }
     }
+
+
 
 }
 

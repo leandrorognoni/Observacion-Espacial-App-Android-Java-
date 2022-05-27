@@ -23,7 +23,7 @@ public class ActividadLuna extends AppCompatActivity {
     public  ImageView iwluna;
     public ImageView fondoLuna;
 
-    LunaController lunaController;
+    private LunaController lunaController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

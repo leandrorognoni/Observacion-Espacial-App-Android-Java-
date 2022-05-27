@@ -13,8 +13,8 @@ import java.util.Locale;
 
 public class ConstelacionController {
 
-    ConstelacionModel constelacionModel;
-    ActividadConstelacion actividadConstelacion;
+  private  ConstelacionModel constelacionModel;
+  private  ActividadConstelacion actividadConstelacion;
 
 
     public ConstelacionController (ActividadConstelacion actividadConstelacion){
@@ -26,7 +26,7 @@ public class ConstelacionController {
     public void aplicar() {
 
       this.actividadConstelacion.textMostrar.setText(constelacionModel.getDescripcion());
-      this.actividadConstelacion.titul.setText(constelacionModel.getTitulo());
+     this.actividadConstelacion.titul.setText(constelacionModel.getTitulo());
       this.actividadConstelacion.textM2.setText(constelacionModel.getCaracteristicas());
 
        Glide.with(this.actividadConstelacion.getApplicationContext())
@@ -34,12 +34,15 @@ public class ConstelacionController {
                 .into(this.actividadConstelacion.ivConste);
 
 
-
-
     }
 
     public void procesar( String textoIngresado  ) {
 
+        //Con cada procesar se vuelva vacio el contenido
+       this.actividadConstelacion.textMostrar.setText("");
+        this.actividadConstelacion.titul.setText("");
+        this.actividadConstelacion.textM2.setText("");
+       // this.actividadConstelacion.ivConste.set
 
 
         String titulo =  constelacionModel.verificar(textoIngresado);

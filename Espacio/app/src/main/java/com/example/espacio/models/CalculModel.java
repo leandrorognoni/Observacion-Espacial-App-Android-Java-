@@ -11,6 +11,7 @@ public class CalculModel {
     private final String CONVERS_SEXAG = "0.";
     private final double MULTIPL_SEXAG = 60;
     private final String URL_FOND = "https://c.tenor.com/53I_s_sx9ncAAAAC/black-space-stars.gif";
+    private final String M_AÑOS_LUZ = "Mal";
 
     private CalcuController calcuController;
 
@@ -97,17 +98,18 @@ public class CalculModel {
             decimalForm.setRoundingMode(RoundingMode.HALF_DOWN);
 
             aDevolver = decimalForm.format(tamaño);
+           aDevolver= aDevolver + " " + M_AÑOS_LUZ;
             return aDevolver;
-        //resultadoCal.setText(  decimalForm.format(tamaño) );
+
 
     }
 
 
-    public String calcularDistancia(double ang , double diametro ) {
+    public String calcularDistancia(double diametro , double ang ) {
 
         String aDevolver = "";
-        double angulo = ang;
         double tamaño = diametro;
+        double angulo = ang;
         double distancia;
 
 
@@ -122,9 +124,9 @@ public class CalculModel {
         decimalForm.setRoundingMode(RoundingMode.HALF_DOWN);
 
         aDevolver = decimalForm.format(distancia);
+        aDevolver= aDevolver + " " + M_AÑOS_LUZ;
 
         return aDevolver;
-        //resultadoCal.setText(  decimalForm.format(distancia) );
 
     }
 

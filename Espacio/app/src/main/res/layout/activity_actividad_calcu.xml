@@ -11,159 +11,422 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="258dp" />
 
-    <TextView
-        android:id="@+id/tit1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="34dp"
-        android:text="Calculo distancia angular"
-        android:textAlignment="center"
-        android:textColor="#A3ABC3"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/calcuAngul"
-        android:layout_width="392dp"
-        android:layout_height="50dp"
-        android:onClick="calcularAngu"
-        android:tag="angulo"
-        android:text="Calcular "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/detalle2"
-        android:layout_width="59dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="12dp"
-        android:text="Mal."
-        android:textColor="#A3ABC3"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+            <TextView
+                android:id="@+id/titDistancia"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bordes"
+                android:text="Calcular Distancia"
+                android:textAlignment="center"
+                android:textColor="#B4D2FF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/tamaño"
-        android:layout_width="160dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Ingrese tamaño"
-        android:inputType="numberDecimal"
-        android:textColor="#A3ABC3"
-        android:textColorHint="#8786B3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/detalle1"
-        android:layout_width="59dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="12dp"
-        android:text="Mal."
-        android:textColor="#A3ABC3"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
+                <TextView
+                    android:id="@+id/tamañoDist"
+                    android:layout_width="80dp"
+                    android:layout_height="39dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Tamaño"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/resultadoCal"
-        android:layout_width="242dp"
-        android:layout_height="30dp"
-        android:hint="Resultado"
-        android:textColor="#C3A0FB"
-        android:textColorHint="#8786B3"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+                <EditText
+                    android:id="@+id/inputTamañoDis"
+                    android:layout_width="150dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:hint="Ingrese tamaño"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3" />
 
-    <TextView
-        android:id="@+id/anguloRes"
-        android:layout_width="105dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="4dp"
-        android:text="Diametro Angular"
-        android:textColor="#A3ABC3"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+                <TextView
+                    android:id="@+id/mDis"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Mal."
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-    <EditText
-        android:id="@+id/distancia"
-        android:layout_width="160dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="Ingrese distancia"
-        android:inputType="numberDecimal"
-        android:textColor="#C3A0FB"
-        android:textColorHint="#8786B3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.133" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/distancia1"
-        android:layout_width="89dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="4dp"
-        android:text="Distancia"
-        android:textColor="#A3ABC3"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+                <TextView
+                    android:id="@+id/angD"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Ángulo"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/tamaño1"
-        android:layout_width="89dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="4dp"
-        android:text="Tamaño"
-        android:textColor="#A3ABC3"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
+                <EditText
+                    android:id="@+id/inputAnguloDis"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:hint="Ingrese ángulo visual"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calcuDistancia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3sp"
+                android:backgroundTint="#40622dfa "
+                android:onClick="calcular"
+                android:tag="distancia"
+                android:text="Calcular " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/disResul"
+                    android:layout_width="80dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Distancia"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/resultadoDis"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:gravity="center_vertical"
+                    android:hint="Resultado"
+                    android:onClick="calcular"
+                    android:paddingLeft="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titTamaño"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bordes"
+                android:text="Calcular Tamaño"
+                android:textAlignment="center"
+                android:textColor="#B4D2FF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tamañoT"
+                    android:layout_width="80dp"
+                    android:layout_height="39dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Distancia"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/inputTamañoTam"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:hint="Ingrese distancia"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/mTam"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Mal."
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/angT"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Ángulo"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/inputAnguloTam"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:hint="Ingrese ángulo visual"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calcuTamaño"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3sp"
+                android:backgroundTint="#40622dfa "
+                android:onClick="calcular"
+                android:tag="tamaño"
+                android:text="Calcular " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tamRes"
+                    android:layout_width="80dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Tamaño"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/resultadoTam"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:gravity="center_vertical"
+                    android:hint="Resultado"
+                    android:paddingLeft="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3"
+                    android:textSize="22sp"
+                  />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titAngular"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bordes"
+                android:text="Calcular Separación Angular"
+                android:textAlignment="center"
+                android:textColor="#B4D2FF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tamaño1"
+                    android:layout_width="80dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Tamaño"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/tamaño"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:hint="Ingrese tamaño"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/detalle1"
+                    android:layout_width="59dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Mal."
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/distancia1"
+                    android:layout_width="80dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Distancia"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/distancia"
+                    android:layout_width="150dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:hint="Ingrese distancia"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/detalle2"
+                    android:layout_width="59dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Mal."
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calcuAngul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3sp"
+                android:backgroundTint="#40622dfa "
+                android:onClick="calcular"
+                android:tag="angulo"
+                android:text="Calcular " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="3sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/anguloRes"
+                    android:layout_width="80dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="Ángulo"
+                    android:textColor="#B4D2FF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/resultadoCal"
+                    android:layout_width="242dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:gravity="center_vertical"
+                    android:hint="Resultado"
+                    android:paddingLeft="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#A3B0D8"
+                    android:textColorHint="#8786B3"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

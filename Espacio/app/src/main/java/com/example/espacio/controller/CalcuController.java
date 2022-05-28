@@ -18,11 +18,27 @@ public class CalcuController {
 
     public void asignarCalculo(String seleccion ){
 
+        double v1;
+        double v2;
+
         if( seleccion.equals("angulo")){
-            double v1 = Double.parseDouble(this.actividadCalcu.tamaño.getText().toString());
-            double v2 = Double.parseDouble( this.actividadCalcu.distancia.getText().toString());
+              v1 = Double.parseDouble(this.actividadCalcu.tamaño.getText().toString());
+              v2 = Double.parseDouble( this.actividadCalcu.distancia.getText().toString());
             String total = this.calculModel.calcularAngu(v1,v2);
             this.actividadCalcu.resultadoCal.setText(total);
+
+        }else if(seleccion.equals("tamaño")){
+            v1 = Double.parseDouble(this.actividadCalcu.inputTamañoTam.getText().toString());
+            v2 = Double.parseDouble( this.actividadCalcu.inputAnguloTam.getText().toString());
+            String totalTam = this.calculModel.calcularTamaño(v1,v2);
+
+            this.actividadCalcu.resultadoTam.setText(totalTam);
+        }else {
+            v1 = Double.parseDouble(this.actividadCalcu.inputTamañoDis.getText().toString());
+            v2 = Double.parseDouble( this.actividadCalcu.inputAnguloDis.getText().toString());
+            String totalTam = this.calculModel.calcularDistancia(v1,v2);
+
+            this.actividadCalcu.resultadoDis.setText(totalTam);
 
         }
 

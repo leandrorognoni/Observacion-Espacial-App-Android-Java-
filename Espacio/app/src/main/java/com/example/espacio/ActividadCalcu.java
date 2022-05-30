@@ -16,13 +16,20 @@ public class ActividadCalcu extends AppCompatActivity {
     public TextView resultadoCal;
     public TextView resultadoTam;
     public TextView resultadoDis;
+    public TextView tiCalcu;
+    public TextView subtiCalcu;
     public ImageView imgFondo;
     public EditText tamaño;
     public EditText distancia;
     public EditText inputTamañoTam;
-    public EditText inputAnguloTam;
+    public EditText inputGraTam;
+    public EditText inputMinTam;
+    public EditText inputSegTam;
     public EditText inputTamañoDis;
-    public EditText inputAnguloDis;
+    public EditText inputGraDis;
+    public EditText inputMinDis;
+    public EditText inputSegDis;
+
     private CalcuController calcuController;
 
     @Override
@@ -30,21 +37,34 @@ public class ActividadCalcu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividad_calcu);
 
+        tiCalcu = findViewById(R.id.tiCalcu);
+        subtiCalcu= findViewById(R.id.subtiCalcu);
+
+        //angulo
         resultadoCal = findViewById(R.id.resultadoCal);
         imgFondo = findViewById(R.id.imgFondo);
         tamaño = findViewById(R.id.tamaño);
         distancia = findViewById(R.id.distancia);
 
+        //tamaño
         resultadoTam = findViewById(R.id.resultadoTam);
         inputTamañoTam = findViewById(R.id.inputTamañoTam);
-        inputAnguloTam = findViewById(R.id.inputAnguloTam);
+        inputGraTam = findViewById(R.id.inputGraTam);
+        inputMinTam = findViewById(R.id.inputMinTam);
+        inputSegTam = findViewById(R.id.inputSegTam);
 
+
+        //distancia
         resultadoDis = findViewById(R.id.resultadoDis);
         inputTamañoDis = findViewById(R.id.inputTamañoDis);
-        inputAnguloDis = findViewById(R.id.inputAnguloDis);
+        inputGraDis = findViewById(R.id.inputGraDis);
+        inputMinDis = findViewById(R.id.inputMinDis);
+        inputSegDis = findViewById(R.id.inputSegDis);
 
         calcuController = new CalcuController(this);
 
+
+        this.calcuController.asignarTi();
         this.calcuController.cargarGlide();
     }
 

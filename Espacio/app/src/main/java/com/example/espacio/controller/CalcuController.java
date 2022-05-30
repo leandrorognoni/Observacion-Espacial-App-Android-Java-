@@ -20,6 +20,9 @@ public class CalcuController {
 
         double v1;
         double v2;
+        double grados;
+        double min;
+        double seg;
 
         if( seleccion.equals("angulo")){
               v1 = Double.parseDouble(this.actividadCalcu.tamaño.getText().toString());
@@ -29,14 +32,19 @@ public class CalcuController {
 
         }else if(seleccion.equals("tamaño")){
             v1 = Double.parseDouble(this.actividadCalcu.inputTamañoTam.getText().toString());
-            v2 = Double.parseDouble( this.actividadCalcu.inputAnguloTam.getText().toString());
-            String totalTam = this.calculModel.calcularTamaño(v1,v2);
+            grados =  Double.parseDouble(this.actividadCalcu.inputGraTam.getText().toString());
+            min =  Double.parseDouble(this.actividadCalcu.inputMinTam.getText().toString());
+            seg =  Double.parseDouble(this.actividadCalcu.inputSegTam.getText().toString());
+            String totalTam = this.calculModel.calcularTamaño(v1,grados , min, seg);
 
             this.actividadCalcu.resultadoTam.setText(totalTam);
         }else {
             v1 = Double.parseDouble(this.actividadCalcu.inputTamañoDis.getText().toString());
-            v2 = Double.parseDouble( this.actividadCalcu.inputAnguloDis.getText().toString());
-            String totalTam = this.calculModel.calcularDistancia(v1,v2);
+            grados =  Double.parseDouble(this.actividadCalcu.inputGraDis.getText().toString());
+            min =  Double.parseDouble(this.actividadCalcu.inputMinDis.getText().toString());
+            seg =  Double.parseDouble(this.actividadCalcu.inputSegDis.getText().toString());
+
+            String totalTam = this.calculModel.calcularDistancia(v1,grados,min,seg);
 
             this.actividadCalcu.resultadoDis.setText(totalTam);
 
@@ -52,5 +60,10 @@ public class CalcuController {
                 .load( calculModel.getURL_FOND())
                 .into(this.actividadCalcu.imgFondo);
 
+    }
+
+    public void asignarTi() {
+        this.actividadCalcu.tiCalcu.setText(calculModel.getTitulo());
+        this.actividadCalcu.subtiCalcu.setText(calculModel.getSubtitulo());
     }
 }

@@ -23,20 +23,40 @@
             android:orientation="vertical" >
 
             <TextView
+                android:id="@+id/tiCalcu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color1"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtiCalcu"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/color1" />
+
+            <TextView
                 android:id="@+id/titDistancia"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/bordes"
                 android:text="Calcular Distancia"
                 android:textAlignment="center"
-                android:textColor="#B4D2FF"
+                android:textColor="@color/color1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -46,7 +66,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Tamaño"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <EditText
@@ -62,7 +82,7 @@
                     android:inputType="numberDecimal"
                     android:paddingStart="5sp"
                     android:textAlignment="viewStart"
-                    android:textColor="#A3B0D8"
+                    android:textColor="@color/color2"
                     android:textColorHint="#8786B3" />
 
                 <TextView
@@ -73,39 +93,100 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Mal."
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/angD"
+                    android:id="@+id/angD3"
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Ángulo"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/inputAnguloDis"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
+                    android:id="@+id/inputGraDis"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="10sp"
                     android:layout_weight="0"
                     android:background="@drawable/bordes"
                     android:ems="10"
-                    android:hint="Ingrese ángulo visual"
                     android:inputType="numberDecimal"
                     android:paddingStart="5sp"
                     android:textAlignment="viewStart"
-                    android:textColor="#A3B0D8"
+                    android:textColor="@color/color2"
                     android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/grados"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:text="º"
+                    android:textColor="@color/color1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputMinDis"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/color2"
+                    android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/minutos"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:text="'"
+                    android:textColor="@color/color1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputSegDis"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/color2"
+                    android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/minutos2"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:text="''"
+                    android:textColor="@color/color1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -123,6 +204,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -133,7 +215,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Distancia"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <TextView
@@ -148,7 +230,7 @@
                     android:onClick="calcular"
                     android:paddingLeft="5sp"
                     android:textAlignment="viewStart"
-                    android:textColor="#A3B0D8"
+                    android:textColor="@color/color2"
                     android:textColorHint="#8786B3"
                     android:textSize="22sp" />
             </LinearLayout>
@@ -157,17 +239,18 @@
                 android:id="@+id/titTamaño"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/bordes"
                 android:text="Calcular Tamaño"
                 android:textAlignment="center"
-                android:textColor="#B4D2FF"
+                android:textColor="@color/color1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -177,7 +260,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Distancia"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <EditText
@@ -193,7 +276,7 @@
                     android:inputType="numberDecimal"
                     android:paddingStart="5sp"
                     android:textAlignment="viewStart"
-                    android:textColor="#A3B0D8"
+                    android:textColor="@color/color2"
                     android:textColorHint="#8786B3" />
 
                 <TextView
@@ -204,13 +287,14 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Mal."
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -220,23 +304,83 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Ángulo"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/inputAnguloTam"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
+                    android:id="@+id/inputGraTam"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="10sp"
                     android:layout_weight="0"
                     android:background="@drawable/bordes"
                     android:ems="10"
-                    android:hint="Ingrese ángulo visual"
                     android:inputType="numberDecimal"
                     android:paddingStart="5sp"
                     android:textAlignment="viewStart"
-                    android:textColor="#A3B0D8"
+                    android:textColor="@color/color2"
                     android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/grados2"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:text="º"
+                    android:textColor="@color/color1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputMinTam"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/color2"
+                    android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/minutos3"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:text="'"
+                    android:textColor="@color/color1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputSegTam"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bordes"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/color2"
+                    android:textColorHint="#8786B3" />
+
+                <TextView
+                    android:id="@+id/minutos4"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="0"
+                    android:text="''"
+                    android:textColor="@color/color1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -254,6 +398,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -264,7 +409,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Tamaño"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <TextView
@@ -280,26 +425,25 @@
                     android:textAlignment="viewStart"
                     android:textColor="#A3B0D8"
                     android:textColorHint="#8786B3"
-                    android:textSize="22sp"
-                  />
+                    android:textSize="22sp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/titAngular"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/bordes"
                 android:text="Calcular Separación Angular"
                 android:textAlignment="center"
-                android:textColor="#B4D2FF"
+                android:textColor="@color/color1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
-                android:layout_marginTop="10sp"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -309,7 +453,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Tamaño"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <EditText
@@ -325,7 +469,7 @@
                     android:inputType="numberDecimal"
                     android:paddingStart="5sp"
                     android:textAlignment="viewStart"
-                    android:textColor="#A3B0D8"
+                    android:textColor="@color/color2"
                     android:textColorHint="#8786B3" />
 
                 <TextView
@@ -336,13 +480,14 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Mal."
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -352,7 +497,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Distancia"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <EditText
@@ -367,7 +512,7 @@
                     android:inputType="numberDecimal"
                     android:paddingStart="5sp"
                     android:textAlignment="viewStart"
-                    android:textColor="#A3B0D8"
+                    android:textColor="@color/color2"
                     android:textColorHint="#8786B3" />
 
                 <TextView
@@ -378,7 +523,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Mal."
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -396,7 +541,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
-                android:layout_marginTop="3sp"
+                android:layout_marginTop="5sp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -407,7 +552,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:text="Ángulo"
-                    android:textColor="#B4D2FF"
+                    android:textColor="@color/color1"
                     android:textSize="18sp" />
 
                 <TextView

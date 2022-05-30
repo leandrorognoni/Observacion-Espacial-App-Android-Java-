@@ -64,11 +64,11 @@ public class LunaController {
             String urlFecha = contenido.select("p").text();
             String [] partes = urlFecha.split(", ");
             String segundo = partes[1];
-            String [] partes2 = segundo.split("Hoy la luna está");
+            String [] partes2 = segundo.split("Hoy");
 
-            lunaModel.asignarTitulo(partes[0]);
-            lunaModel.asignarFecha(partes2[0]);
-            lunaModel.asignarEstado(partes2[1]);
+           lunaModel.asignarTitulo(partes[0]);
+           lunaModel.asignarFecha(partes2[0]);
+           lunaModel.asignarEstado(partes2[1]);
 
 
         } catch (IOException e) {

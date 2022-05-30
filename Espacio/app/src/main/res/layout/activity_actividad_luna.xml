@@ -38,7 +38,7 @@
                 android:layout_marginTop="5sp"
                 android:elegantTextHeight="false"
                 android:text="Cargando..."
-                android:textColor="#9DACD1"
+                android:textColor="@color/color3"
                 android:textSize="35dp"
                 android:textStyle="bold" />
 
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10sp"
-                android:textColor="#9DACD1"
+                android:textColor="@color/color3"
                 android:textSize="25sp" />
 
             <TextView
@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:layout_marginLeft="10sp"
-                android:textColor="#9DACD1"
+                android:textColor="@color/color3"
                 android:textSize="24sp" />
 
             <ImageView
@@ -70,7 +70,7 @@
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10sp"
-                android:textColor="#9DACD1"
+                android:textColor="@color/color3"
                 android:textSize="24sp"
                 android:textStyle="italic" />
 
@@ -79,9 +79,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10sp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="10sp"
-                android:textColor="#9DACD1"
+                android:textColor="@color/color3"
                 android:textSize="25sp" />
 
             <TextView
@@ -91,13 +91,13 @@
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="5sp"
                 android:layout_marginRight="10sp"
-                android:textColor="#9DACD1"
+                android:textColor="@color/color3"
                 android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/ivlunas"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="173dp"
                 android:layout_marginTop="5sp"
                 app:srcCompat="@drawable/fase_lunar" />
 
@@ -107,7 +107,7 @@
                 android:layout_height="400dp"
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="10sp"
-                android:textColor="#9DACD1"
+                android:textColor="@color/color2"
                 android:textSize="20sp" />
 
             <Button
@@ -118,6 +118,7 @@
                 android:backgroundTint="#80000000"
                 android:onClick="info"
                 android:text="Mas Info"
+                android:textColor="@color/color3"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
@@ -133,6 +134,7 @@
                 android:backgroundTint="#80000000"
                 android:onClick="volver"
                 android:text="Volver al Menu"
+                android:textColor="@color/color3"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"

@@ -72,15 +72,15 @@ public class LunaModel {
     private void setDescripcion2() {
         this.segundaDesc = "El origen de la Luna generalmente se explica por un cuerpo del tamaño de Marte que" +
                 " golpea la Tierra, formando un anillo de escombros que eventualmente se acumuló en un solo satélite natural," +
-                " la Luna, pero también hay una serie de variaciones en esta hipótesis de impacto gigante. como explicaciones alternativas, " +
+                " la Luna, pero también hay una serie de variaciones en esta hipótesis de impacto gigante. \n \nComo explicaciones alternativas, " +
                 "y la investigación continúa sobre cómo surgió la Luna. Otros escenarios propuestos incluyen cuerpo capturado, fisión, " +
                 "formados juntos (teoría de la condensación, Sinesia), colisiones planetesimales (formadas a partir de cuerpos similares a" +
                 " asteroides) y teorías de colisión.\n"
                 + "\n" +
                 "La hipótesis estándar de impacto gigante sugiere que el cuerpo del tamaño de Marte, llamado Tea, impactó la proto-Tierra," +
-                " creando un gran anillo de escombros alrededor de la Tierra, que luego se acrecentó para formar la Luna. Esta colisión" +
+                " creando un gran anillo de escombros alrededor de la Tierra, que luego se acrecentó para formar la Luna.\n Esta colisión" +
                 " también resultó en el eje inclinado de 23.5 ° de la Tierra, causando así las estaciones. Las proporciones isotópicas de " +
-                "oxígeno de la Luna parecen ser esencialmente idénticas a las de la Tierra. Las proporciones isotópicas de oxígeno, que " +
+                "oxígeno de la Luna parecen ser esencialmente idénticas a las de la Tierra.\n \nLas proporciones isotópicas de oxígeno, que " +
                 "pueden medirse con mucha precisión, producen una firma única y distinta para cada cuerpo del sistema solar. Si Tea hubiera " +
                 "sido un protoplaneta separado, probablemente habría tenido una firma isotópica de oxígeno diferente de la proto-Tierra, al" +
                 " igual que el material mixto expulsado. Además, la relación de isótopos de titanio de la Luna (50Ti/47Ti ) parece tan" +
@@ -98,7 +98,7 @@ public class LunaModel {
                 "formación del Sistema Solar, hace 4.6 mil millones de años, la Tierra era básicamente roca y lava. Tea, un protoplaneta " +
                 "temprano del tamaño de Marte, golpeó la Tierra de tal manera que expulsó una cantidad considerable de material lejos de la " +
                 "Tierra. Una parte de estas eyecciones escapó al espacio, pero el resto se consolidó en un solo cuerpo esférico en órbita " +
-                "alrededor de la Tierra, creando la Luna.\n" +
+                "alrededor de la Tierra, creando la Luna.\n\n" +
                 "La hipótesis requiere una colisión entre una proto-Tierra de aproximadamente el 90% del tamaño de la" +
                 " Tierra actual, y otro cuerpo del diámetro de Marte (la mitad del diámetro terrestre y una décima parte de su masa)." +
                 " A esta última a veces se la conoce como Tea, el nombre de la madre de Selene, la diosa de la Luna en la mitología griega. " +
@@ -112,20 +112,20 @@ public class LunaModel {
                 "un largo brazo de material que luego se corta. La forma asimétrica de la Tierra después de la colisión hace que este material" +
                 " se asiente en una órbita alrededor de la masa principal. La energía involucrada en esta colisión es impresionante: posiblemente" +
                 " billones de toneladas de material se habrían vaporizado y derretido. En partes de la Tierra, la temperatura habría aumentado a " +
-                "10 000 °C. \n" + "El núcleo de hierro relativamente pequeño de la Luna (en comparación con otros planetas rocosos y lunas en el " +
-                "Sistema Solar) se explica por el núcleo de Theia que se fusiona principalmente con el de la Tierra. La falta de volátiles en las" +
+                "10 000 °C. \n \n" + "El núcleo de hierro relativamente pequeño de la Luna (en comparación con otros planetas rocosos y lunas en el " +
+                "Sistema Solar) se explica por el núcleo de Theia que se fusiona principalmente con el de la Tierra.\n La falta de volátiles en las" +
                 " muestras lunares también se explica en parte por la energía de la colisión. La energía liberada durante la reacreación de material " +
                 "en órbita alrededor de la Tierra habría sido suficiente para derretir una gran parte de la Luna, lo que llevaría a la generación de un" +
-                " océano de magma.\n" + "La Luna recién formada orbitaba aproximadamente a una décima parte de la distancia que lo hace hoy," +
+                " océano de magma.\n \n" + "La Luna recién formada orbitaba aproximadamente a una décima parte de la distancia que lo hace hoy," +
                 " y gira en espiral hacia afuera debido a la fricción de las mareas que transfiere el momento angular de las rotaciones de " +
-                "ambos cuerpos al movimiento orbital de la Luna. A lo largo del camino, la rotación de la Luna se bloqueó en la Tierra, " +
-                "por lo que un lado de la Luna se enfrenta continuamente hacia la Tierra. Además, la Luna habría chocado e incorporado" +
+                "ambos cuerpos al movimiento orbital de la Luna.\nA lo largo del camino, la rotación de la Luna se bloqueó en la Tierra, " +
+                "por lo que un lado de la Luna se enfrenta continuamente hacia la Tierra.\nAdemás, la Luna habría chocado e incorporado" +
                 " los pequeños satélites preexistentes de la Tierra, que habrían compartido la composición de la Tierra, incluidas las " +
-                "abundancias isotópicas. La geología de la Luna desde entonces ha sido más independiente de la Tierra.\n" +
+                "abundancias isotópicas. La geología de la Luna desde entonces ha sido más independiente de la Tierra.\n \n" +
                  "Un estudio de 2012 sobre el agotamiento de los isótopos de zinc en la Luna apoyó el origen del gran impacto para la Tierra y la Luna." +
                 "\n" +
                 "En 2013, se publicó un estudio que indicaba que el agua en el magma lunar es indistinguible de la de las condritas carbonosas y casi " +
-                "igual que la de la Tierra en la composición isotópica.\n" + "La hipótesis del gran impacto fue nuevamente cuestionada en septiembre de 2013," +
+                "igual que la de la Tierra en la composición isotópica.\n\n" + "La hipótesis del gran impacto fue nuevamente cuestionada en septiembre de 2013," +
                 " con la creciente sensación de que los orígenes lunares son más complicados.";
 
     }

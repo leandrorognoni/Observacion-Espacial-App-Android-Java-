@@ -1,5 +1,7 @@
 package com.example.espacio.controller;
 
+import android.view.View;
+
 import com.bumptech.glide.Glide;
 import com.example.espacio.ActividadLuna;
 import com.example.espacio.ActividadLuna2;
@@ -48,6 +50,7 @@ public class LunaController {
                 .load(lunaModel.getURL_LUNAFONDO())
                 .into(this.lunaActividad.fondoLuna);
 
+        lunaActividad.pbar1.setVisibility(View.GONE);
 
     }
 

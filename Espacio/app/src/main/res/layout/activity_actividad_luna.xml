@@ -8,6 +8,19 @@
     tools:context=".ActividadLuna">
 
 
+    <ProgressBar
+        android:id="@+id/pbar1"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="95dp"
+        android:layout_height="69dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:progressTint="#394E8C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fondoLuna"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/fondoLuna"
         android:layout_width="match_parent"
@@ -37,7 +50,6 @@
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="5sp"
                 android:elegantTextHeight="false"
-                android:text="Cargando..."
                 android:textColor="@color/color3"
                 android:textSize="35dp"
                 android:textStyle="bold" />
@@ -55,6 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
                 android:textColor="@color/color3"
                 android:textSize="24sp" />
 

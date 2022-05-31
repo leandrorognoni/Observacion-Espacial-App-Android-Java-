@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.espacio.controller.SolController;
@@ -24,6 +25,7 @@ public class ActividadSol extends AppCompatActivity {
     public ImageView iwSol7;
     public ImageView iwSol8;
     public ImageView f1;
+    public ProgressBar pbar2;
 
     public SolController solController;
 
@@ -44,6 +46,7 @@ public class ActividadSol extends AppCompatActivity {
         iwSol6 = findViewById(R.id.iwSol6);
         iwSol7 = findViewById(R.id.iwSol7);
         iwSol8 = findViewById(R.id.iwSol8);
+        pbar2 = findViewById(R.id.pbar2);
         f1 = findViewById(R.id.f1);
 
         solController = new SolController(this);

@@ -7,6 +7,19 @@
     android:background="@color/black"
     tools:context=".ActividadSol">
 
+    <ProgressBar
+        android:id="@+id/pbar2"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="95dp"
+        android:layout_height="69dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:progressTint="#394E8C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/f1"
         android:layout_width="match_parent"
@@ -33,7 +46,6 @@
                 android:layout_height="57dp"
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="10sp"
-                android:text="Cargando"
                 android:textColor="#8B8DB5"
                 android:textSize="30sp"
                 android:textStyle="bold" />

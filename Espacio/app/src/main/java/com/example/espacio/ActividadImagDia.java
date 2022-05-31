@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.espacio.controller.ImagenDiaController;
@@ -17,6 +18,7 @@ public class ActividadImagDia extends AppCompatActivity {
     public TextView fecha;
     public TextView descopy;
     public ImageView iw1;
+    public ProgressBar pbar;
 
     public ImagenDiaController imagenDiaController;
 
@@ -30,6 +32,7 @@ public class ActividadImagDia extends AppCompatActivity {
         fecha = findViewById(R.id.fecha);
         descopy = findViewById(R.id.descopy);
         iw1 = findViewById(R.id.iw1);
+        pbar = findViewById(R.id.pbar);
         imagenDiaController = new ImagenDiaController(this);
 
         Content content =  new Content();

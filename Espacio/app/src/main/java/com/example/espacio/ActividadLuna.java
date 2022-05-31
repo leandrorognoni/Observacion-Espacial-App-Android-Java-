@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.espacio.controller.LunaController;
@@ -22,6 +23,7 @@ public class ActividadLuna extends AppCompatActivity {
     public TextView adi;
     public  ImageView iwluna;
     public ImageView fondoLuna;
+    public ProgressBar pbar1;
 
     private LunaController lunaController;
 
@@ -39,6 +41,7 @@ public class ActividadLuna extends AppCompatActivity {
         descTitu = findViewById(R.id.descTitu);
         adi = findViewById(R.id.adi);
         fondoLuna = findViewById(R.id.fondoLuna);
+        pbar1 = findViewById(R.id.pbar1);
         lunaController = new LunaController(this);
 
 

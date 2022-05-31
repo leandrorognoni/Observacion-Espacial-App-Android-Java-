@@ -71,8 +71,13 @@ public class ActividadCalcu extends AppCompatActivity {
 
     public void calcular(View v){
 
-        //Se envia por parametro el nombre del tag del boton que coincide con el metodo que realizara
-        this.calcuController.asignarCalculo(v.getTag().toString());
+        try{
+            //Se envia por parametro el nombre del tag del boton que coincide con el metodo que realizara
+            this.calcuController.asignarCalculo(v.getTag().toString());
+        }catch (Exception e){
+
+        }
+
 
 
     }

@@ -1,5 +1,7 @@
 package com.example.espacio.controller;
 
+import android.view.View;
+
 import com.bumptech.glide.Glide;
 import com.example.espacio.ActividadSol;
 import com.example.espacio.models.SolModel;
@@ -70,7 +72,7 @@ public class SolController {
                 .load(solModel.getURL_PRINCIPAL() + solModel.getArrayListImagenes().get(7))
                 .into(this.actividadSol.iwSol8);
 
-
+        actividadSol.pbar2.setVisibility(View.GONE);
 
 
 

@@ -7,6 +7,19 @@
     android:background="@color/black"
     tools:context=".ActividadImagDia">
 
+  <ProgressBar
+      android:id="@+id/pbar"
+      style="@style/Widget.AppCompat.ProgressBar"
+      android:layout_width="95dp"
+      android:layout_height="69dp"
+      android:background="#000000"
+      android:backgroundTint="#000000"
+      android:progressTint="#394E8C"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
   <TextView
       android:id="@+id/titulo"
       android:layout_width="match_parent"

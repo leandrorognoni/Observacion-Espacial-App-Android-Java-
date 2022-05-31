@@ -1,5 +1,7 @@
 package com.example.espacio.controller;
 
+import android.view.View;
+
 import com.bumptech.glide.Glide;
 import com.example.espacio.ActividadImagDia;
 import com.example.espacio.ActividadSol;
@@ -34,7 +36,7 @@ public class ImagenDiaController {
                 .load(imagenDiaModel.getUrl() + imagenDiaModel.getImagen())
                 .into(this.actividadImagDia.iw1);
 
-
+        actividadImagDia.pbar.setVisibility(View.GONE);
     }
 
 

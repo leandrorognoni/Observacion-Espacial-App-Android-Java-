@@ -4,9 +4,7 @@ import android.view.View;
 
 import com.bumptech.glide.Glide;
 import com.example.espacio.ActividadImagDia;
-import com.example.espacio.ActividadSol;
-import com.example.espacio.models.ImagenDiaModel;
-import com.example.espacio.models.SolModel;
+import com.example.espacio.models.ImagenDia;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -16,12 +14,12 @@ import java.io.IOException;
 
 public class ImagenDiaController {
 
-    private ImagenDiaModel imagenDiaModel;
+    private ImagenDia imagenDiaModel;
     private ActividadImagDia actividadImagDia;
 
     public ImagenDiaController(ActividadImagDia actividadImagDia) {
         this.actividadImagDia = actividadImagDia;
-        this.imagenDiaModel = new ImagenDiaModel(this);
+        this.imagenDiaModel = new ImagenDia(this);
 
     }
 

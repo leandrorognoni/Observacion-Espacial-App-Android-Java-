@@ -48,11 +48,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10sp"
-                android:layout_marginTop="5sp"
+                android:layout_marginTop="7sp"
                 android:elegantTextHeight="false"
                 android:textColor="@color/color3"
                 android:textSize="35dp"
                 android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/sep1"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/separador" />
+
+            <ImageView
+                android:id="@+id/sep5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="5sp"
+                app:srcCompat="@drawable/separador" />
 
             <TextView
                 android:id="@+id/t1luna2"
@@ -72,20 +92,39 @@
                 android:textSize="24sp" />
 
             <ImageView
+                android:id="@+id/sep6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="5sp"
+                app:srcCompat="@drawable/separador" />
+
+            <ImageView
                 android:id="@+id/iwluna"
                 android:layout_width="match_parent"
-                android:layout_height="263dp" />
+                android:layout_height="263dp"
+                android:layout_marginTop="10sp" />
 
             <TextView
                 android:id="@+id/t2luna"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10sp"
                 android:textColor="@color/color3"
                 android:textSize="24sp"
                 android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/sep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="10sp"
+                app:srcCompat="@drawable/separador" />
 
             <TextView
                 android:id="@+id/descTitu"
@@ -96,6 +135,15 @@
                 android:layout_marginRight="10sp"
                 android:textColor="@color/color3"
                 android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/sep3"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/separador" />
 
             <TextView
                 android:id="@+id/desc"
@@ -112,6 +160,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="173dp"
                 android:layout_marginTop="5sp"
+                android:alpha="0.70"
                 app:srcCompat="@drawable/fase_lunar" />
 
             <TextView
@@ -122,6 +171,15 @@
                 android:layout_marginRight="10sp"
                 android:textColor="@color/color2"
                 android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/sep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginRight="10sp"
+                app:srcCompat="@drawable/separador" />
 
             <Button
                 android:id="@+id/masInfo"

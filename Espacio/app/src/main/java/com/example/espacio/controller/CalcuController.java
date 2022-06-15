@@ -2,16 +2,16 @@ package com.example.espacio.controller;
 
 import com.bumptech.glide.Glide;
 import com.example.espacio.ActividadCalcu;
-import com.example.espacio.models.CalculModel;
+import com.example.espacio.models.Calcul;
 
 public class CalcuController {
 
   private ActividadCalcu actividadCalcu;
-  private CalculModel calculModel;
+  private Calcul calculModel;
 
     public CalcuController  (ActividadCalcu actividadCalcu) {
         this.actividadCalcu = actividadCalcu;
-        this.calculModel = new CalculModel(this) ;
+        this.calculModel = new Calcul(this) ;
 
     }
 

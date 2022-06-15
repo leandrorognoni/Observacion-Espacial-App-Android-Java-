@@ -4,7 +4,7 @@ import android.view.View;
 
 import com.bumptech.glide.Glide;
 import com.example.espacio.ActividadSol;
-import com.example.espacio.models.SolModel;
+import com.example.espacio.models.Sol;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -14,17 +14,17 @@ import java.io.IOException;
 
 public class SolController {
 
-    private SolModel solModel;
+    private Sol solModel;
     private ActividadSol actividadSol;
 
 
     public SolController(ActividadSol actividadSol) {
         this.actividadSol = actividadSol;
-        this.solModel = new SolModel(this);
+        this.solModel = new Sol(this);
 
     }
 
-    public void aplicarGlide() {
+    public void aplicar() {
 
         this.actividadSol.titu1.setText(solModel.getTITULO());
         this.actividadSol.subti.setText(solModel.getSUB_TIT());
@@ -73,7 +73,6 @@ public class SolController {
                 .into(this.actividadSol.iwSol8);
 
         actividadSol.pbar2.setVisibility(View.GONE);
-
 
 
 

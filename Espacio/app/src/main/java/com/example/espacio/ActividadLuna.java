@@ -54,7 +54,8 @@ public class ActividadLuna extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void unused) {
             super.onPostExecute(unused);
-            lunaController.aplicarGlide();
+
+            lunaController.aplicar();
             lunaController.asignarText();
         }
 
@@ -62,6 +63,7 @@ public class ActividadLuna extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
 
             lunaController.procesar();
+
             return null;
         }
 

@@ -50,6 +50,24 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/sep20"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/separador" />
+
+            <ImageView
+                android:id="@+id/sep22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="5sp"
+                app:srcCompat="@drawable/separador" />
+
             <TextView
                 android:id="@+id/subti"
                 android:layout_width="match_parent"
@@ -80,42 +98,50 @@
             <ImageView
                 android:id="@+id/iwSol1"
                 android:layout_width="match_parent"
-                android:layout_height="421dp" />
+                android:layout_height="421dp"
+                android:alpha="0.7" />
 
             <ImageView
                 android:id="@+id/iwSol2"
                 android:layout_width="match_parent"
-                android:layout_height="421dp" />
+                android:layout_height="421dp"
+                android:alpha="0.7" />
 
             <ImageView
                 android:id="@+id/iwSol3"
                 android:layout_width="match_parent"
-                android:layout_height="421dp" />
+                android:layout_height="421dp"
+                android:alpha="0.7" />
 
             <ImageView
                 android:id="@+id/iwSol4"
                 android:layout_width="match_parent"
-                android:layout_height="421dp" />
+                android:layout_height="421dp"
+                android:alpha="0.7" />
 
             <ImageView
                 android:id="@+id/iwSol5"
                 android:layout_width="match_parent"
-                android:layout_height="421dp" />
+                android:layout_height="421dp"
+                android:alpha="0.7" />
 
             <ImageView
                 android:id="@+id/iwSol6"
                 android:layout_width="match_parent"
-                android:layout_height="421dp" />
+                android:layout_height="421dp"
+                android:alpha="0.7" />
 
             <ImageView
                 android:id="@+id/iwSol7"
                 android:layout_width="match_parent"
-                android:layout_height="421dp" />
+                android:layout_height="421dp"
+                android:alpha="0.7" />
 
             <ImageView
                 android:id="@+id/iwSol8"
                 android:layout_width="match_parent"
-                android:layout_height="421dp" />
+                android:layout_height="421dp"
+                android:alpha="0.7" />
 
         </LinearLayout>
     </ScrollView>

@@ -32,6 +32,24 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/sep15"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/separador" />
+
+            <ImageView
+                android:id="@+id/sep16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="5sp"
+                app:srcCompat="@drawable/separador" />
+
             <TextView
                 android:id="@+id/subtiCalcu"
                 android:layout_width="match_parent"
@@ -570,6 +588,15 @@
                     android:textColorHint="#8786B3"
                     android:textSize="22sp" />
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/sep21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginRight="10sp"
+                app:srcCompat="@drawable/separador" />
 
             <Button
                 android:id="@+id/volver2"

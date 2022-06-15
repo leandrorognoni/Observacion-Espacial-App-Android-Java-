@@ -5,7 +5,7 @@ import android.view.View;
 import com.bumptech.glide.Glide;
 import com.example.espacio.ActividadLuna;
 import com.example.espacio.ActividadLuna2;
-import com.example.espacio.models.LunaModel;
+import com.example.espacio.models.Luna;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -16,25 +16,25 @@ import java.io.IOException;
 public class LunaController {
 
 
-    private LunaModel lunaModel;
+    private Luna lunaModel;
     private ActividadLuna lunaActividad;
     private ActividadLuna2 lunaActividad2;
 
 
     public LunaController (ActividadLuna luna) {
             this.lunaActividad = luna;
-            this.lunaModel = new LunaModel(this);
+            this.lunaModel = new Luna(this);
 
     }
 
     public LunaController (ActividadLuna2 luna2) {
         this.lunaActividad2 = luna2;
-        this.lunaModel = new LunaModel(this);
+        this.lunaModel = new Luna(this);
 
     }
 
 
-    public void aplicarGlide() {
+    public void aplicar() {
         this.lunaActividad.t1luna.setText(lunaModel.getTitulo());
         this.lunaActividad.t1luna2.setText(lunaModel.getFecha());
         this.lunaActividad.t1luna3.setText(lunaModel.getEstado());

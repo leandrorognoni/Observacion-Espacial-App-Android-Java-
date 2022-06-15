@@ -4,24 +4,23 @@ import android.view.View;
 
 import com.bumptech.glide.Glide;
 import com.example.espacio.ActividadConstelacion;
-import com.example.espacio.models.ConstelacionModel;
+import com.example.espacio.models.Constelacion;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.util.Locale;
 
 public class ConstelacionController {
 
-  private  ConstelacionModel constelacionModel;
+  private Constelacion constelacionModel;
   private  ActividadConstelacion actividadConstelacion;
 
 
     public ConstelacionController (ActividadConstelacion actividadConstelacion){
         this.actividadConstelacion = actividadConstelacion;
-        this.constelacionModel = new ConstelacionModel(this);
+        this.constelacionModel = new Constelacion(this);
 
     }
 

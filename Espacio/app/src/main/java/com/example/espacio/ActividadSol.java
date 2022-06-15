@@ -61,7 +61,7 @@ public class ActividadSol extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void unused) {
             super.onPostExecute(unused);
-            solController.aplicarGlide();
+            solController.aplicar();
 
         }
 

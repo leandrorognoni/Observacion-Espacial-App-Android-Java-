@@ -5,13 +5,18 @@
       <map>
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/drawable/bordes.xml" value="0.20729166666666668" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/drawable/color1.xml" value="0.2890625" />
+        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/drawable/gradiente.xml" value="0.2890625" />
+        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/drawable/seffs.xml" value="0.2890625" />
+        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/drawable/sep.xml" value="0.1" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_calcu.xml" value="0.33" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_constelacion.xml" value="0.25" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_luna.xml" value="0.25" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_luna2.xml" value="0.18" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_actividad_sol.xml" value="0.22" />
-        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_imagen_dia.xml" value="0.25" />
+        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_imagen_dia.xml" value="0.33" />
         <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/layout.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/Lea/AndroidStudioProjects/Espacio/app/src/main/res/layout/separador.xml" value="0.2109375" />
       </map>
     </option>
   </component>

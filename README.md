@@ -2,8 +2,7 @@
  
 <h1 align="center"> Observación Espacial  </h1>
  
-<p align="center"><img src="https://i.postimg.cc/Dy21PNSf/App-met-foto.png"/></p> 
-
+ 
 ## Descripción y contexto
 ---
 Esta aplicación Android, utiliza técnicas de web scraping para obtener imágenes en tiempo real del sol desde la estación espacial, así como información detallada sobre la posición y fase actual de la luna. Además, incluye una calculadora de paralaje espacial para calcular distancias astronómicas con precisión.
